@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/注册信息"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/性别"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Name"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/曾去过"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg1" />
+
+<!--    注册，跳转好友页-->
+    <Button
+        android:id="@+id/but_Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:text="@string/注册"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_SH" />
+
+<!--    输入姓名-->
+    <EditText
+        android:id="@+id/editText_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="8"
+        android:gravity="center"
+        android:hint="@string/请输入姓名"
+        android:textStyle="italic"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:autofillHints="" />
+
+<!--    选择性别-->
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg1"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:layout_marginTop="24dp">
+
+        <RadioButton
+            android:id="@+id/man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/男"
+            android:textStyle="italic"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/women"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/女"
+            android:textStyle="italic"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+<!--    选择地点-->
+    <CheckBox
+        android:id="@+id/checkBox_SH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/上海"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_BJ"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <CheckBox
+        android:id="@+id/checkBox_SZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/深圳"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_GZ"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <CheckBox
+        android:id="@+id/checkBox_BJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/北京"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <CheckBox
+        android:id="@+id/checkBox_GZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/广州"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_SH"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

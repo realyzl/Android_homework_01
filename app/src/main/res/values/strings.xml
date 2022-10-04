@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">homework_01</string>
+    <string name="password">密码</string>
+    <string name="account">账号</string>
+    <string name="login">登录</string>
+    <string name="注册信息">注册信息</string>
+    <string name="请输入姓名">请输入姓名</string>
+    <string name="性别">性别</string>
+    <string name="所在地">所在地</string>
+    <string name="男">男</string>
+    <string name="女">女</string>
+    <string name="曾去过">曾去过</string>
+    <string name="注册">注册</string>
+    <string name="北京">北京</string>
+    <string name="上海">上海</string>
+    <string name="广州">广州</string>
+    <string name="深圳">深圳</string>
+    <string name="没有账号立即注册">没有账号？立即注册！</string>
+    <string name="todo">TODO</string>
+    <string name="许业展">许业展</string>
+    <string name="我对象最可爱">我对象最可爱</string>
+    <string name="苑凯旋">苑凯旋</string>
+    <string name="心海我的心海">心海我的心海</string>
+    <string name="尹辉">尹辉</string>
+    <string name="代号金雕">代号：金雕</string>
+    <string name="杨宇熙">杨宇熙</string>
+    <string name="今天也是没有猫猫的一天">今天也是没有猫猫的一天</string>
+    <string name="岳乐天">岳乐天</string>
+    <string name="无论再过多少年我都依然爱你如命">无论再过多少年，我都依然爱你如命</string>
+    <string name="hello">hello!</string>
+</resources>
